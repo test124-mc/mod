@@ -1,0 +1,40 @@
+{
+	"schemaVersion": 1,
+	"id": "test124",
+	"version": "${version}",
+	"name": "test124",
+	"description": "This is an example description! Tell everyone what your mod is about!",
+	"authors": [
+		"test124"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "mit",
+	"icon": "assets/test124/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"net.name.modid.Test124"
+		],
+		"client": [
+			"net.name.modid.Test124Client"
+		],
+		"fabric-datagen": [
+			"net.name.modid.Test124DataGenerator"
+		]
+	},
+	"mixins": [
+		"test124.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.14.21",
+		"minecraft": "~1.20.1",
+		"java": ">=17",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
